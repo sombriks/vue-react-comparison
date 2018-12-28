@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FOO</title>
+    <script src="https://unpkg.com/vue@2.5/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="text/javascript">
+      new Vue({
+        el: "#app",
+        name: "hello",
+        data: _ => ({ name: "World!" }),
+        methods: {
+          sayhello() {
+            alert(`Hello, ${this.name}`);
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
