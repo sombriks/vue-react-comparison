@@ -15,7 +15,9 @@ class Settings extends Component {
           value={this.state.name}
           onChange={e => this.setState({ name: e.target.value })}
         />
-        <button onClick={e => this.props.changeName(this.state.name)}>Change</button>
+        <button onClick={e => this.props.changeName(this.state.name)}>
+          Change
+        </button>
       </div>
     );
   }
